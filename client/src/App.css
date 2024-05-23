@@ -1,0 +1,62 @@
+/* Ensure the container covers the full viewport */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style the welcome message */
+.welcome-message {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the login button */
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-message {
+      font-size: 1.5em;
+  }
+
+  .login-button {
+      font-size: 0.9em;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-message {
+      font-size: 1.2em;
+  }
+
+  .login-button {
+      font-size: 0.8em;
+      padding: 8px;
+  }
+}
