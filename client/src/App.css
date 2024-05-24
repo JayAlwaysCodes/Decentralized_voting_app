@@ -1,5 +1,5 @@
 /* Ensure the container covers the full viewport */
-.login-container {
+.login-container  {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,8 +11,29 @@
   box-sizing: border-box;
 }
 
+.connected-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cdd1d6;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box
+}
+
+
+
 /* Style the welcome message */
 .welcome-message {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.connected-header{
   font-size: 2em;
   color: #333;
   margin-bottom: 20px;
@@ -43,6 +64,9 @@
   .welcome-message {
       font-size: 1.5em;
   }
+  .connected-header{
+    font-size: 1.5em;
+  }
 
   .login-button {
       font-size: 0.9em;
@@ -53,6 +77,10 @@
 @media (max-width: 480px) {
   .welcome-message {
       font-size: 1.2em;
+  }
+
+  .connected-header{
+    font-size: 1.2em;
   }
 
   .login-button {
